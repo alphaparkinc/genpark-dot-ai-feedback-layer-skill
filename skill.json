@@ -1,0 +1,30 @@
+{
+  "name": "genpark-dot-ai-feedback-layer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - dot-like interactive feedback parser for AI outputs.",
+  "author": "genpark",
+  "category": "agentic",
+  "tags": [
+    "feedback",
+    "ui-corrector",
+    "dot"
+  ],
+  "inputs": {
+    "original_output_id": {
+      "type": "string"
+    },
+    "rating_score": {
+      "type": "integer"
+    },
+    "text_correction": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "revised_prompt_instructions": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
